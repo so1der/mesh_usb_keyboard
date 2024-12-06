@@ -12,9 +12,9 @@ For this project You need:
 
 Logic level shifter needed because Arduino and keyboard use 5V, while ESP32 inside Meshtastic uses 3.3V. Resistors are needed to pull USB Data lines to +5V.
 
-Connect everything according to schematic. You can use the same pins that Node OLED screen uses, since its I2C, serial bus.
+Connect everything according to schematic. You can use the same pins that Node OLED screen uses, since its I2C, serial bus. Now - use PlatformIO to flash arduino (open folder `USB_Keyboard` as a PlatformIO project)
 
-After that - open Node settings, go to `Canned Message`, enable them, and type `cardkb`  into `Allow input source` field.
+After that - open Node settings, go to `Canned Message`, enable them, and type `cardkb`  into `Allow input source` field. 
 
 This particular method is relaying on existing keyboard implemented in Meshtastic - cardkb, so we dont need to modify Meshtastic Source Code.
 
